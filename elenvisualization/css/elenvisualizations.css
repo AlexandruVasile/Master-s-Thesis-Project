@@ -1,0 +1,95 @@
+*/ html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    margin: 0;
+    font-size: 40;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    /*border-bottom: 50px solid black;*/
+    /*margin-bottom: 80px; */
+}
+
+h1 {
+    color: white;
+    background-color: black;
+    margin-bottom: 80px;
+}
+
+
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -30px;
+}
+
+
+
+.charts_area {
+
+
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.input {
+
+    text-align: center;
+
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-color: black;
+    border-bottom: 2px solid black;
+}
+
+.box {
+    border: 2px solid black;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #E6B72B;
+    overflow: auto;
+}
+
+button:hover {
+    color: #F8EC89;
+}
+
+#footer {
+    height: 30px;
+
+}
+
+.push {
+    height: 30px;
+}
+
+.chartBottomSide {
+    text-align: left;
+    color: grey;
+    background-color: white;
+    border-bottom: 2px solid black;
+    overflow: auto;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.chart {
+    height: 500px;
+    width: 100%
+}

@@ -1,0 +1,80 @@
+.noBulletsOnList {
+    list-style-type: none;
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; 
+	list-style: none;
+	margin: 0;
+	align-items:center; 
+	background: black;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.nav a {
+	display: block; /*visualizza ogni elemento anchor su una nuova linea*/
+	color: #1A4008; 
+	padding: 15px; /*per allontanare gli elementi tra loro */
+	text-decoration: none; /* toglie la sottolineatura degli anchor/link */
+	color: white;
+}
+
+.nav a:hover {
+	background: #6D78AD; 
+}
+
+
+.nav2 {
+	flex-direction: column;
+	text-align: center;
+	padding: 0; /*altrimenti gli item non sono perfettamente centrati*/
+
+	display: flex;
+	list-style: none;
+	margin: 0;
+	align-items:center; 
+	background: black;
+	font-weight: bold;
+}
+
+.nav2 a {
+	display: block; /*visualizza ogni elemento anchor su una nuova linea*/
+	color: #1A4008; 
+	padding: 15px; /*per allontanare gli elementi tra loro */
+	text-decoration: none; /* toglie la sottolineatura degli anchor/link */
+	color: white;
+}
+
+.nav2 a:hover {
+	background: #6D78AD; 
+}
+
+.nav2>li{
+	width: 100%;	/* la box dell'elemento occupera' tutta la riga */	
+}
+
+
+@media all and (max-width: 800px) {
+	.nav{ 
+		align-items: center; 
+		justify-content: space-evenly; /*posiziona gli item in modo che tra di loro lo spazio sia uguale*/
+									   /* 
+									     https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=flex-end 
+									   */
+	}
+}
+
+@media all and (max-width: 700px) {
+	.nav {
+		flex-direction: column;
+		text-align: center;
+		padding: 0; /*altrimenti gli item non sono perfettamente centrati*/
+	}
+  
+	.nav>li{
+		width: 100%;	/* la box dell'elemento occupera' tutta la riga */	
+	}
+}
