@@ -10,6 +10,7 @@ For the Longitudinal Graph Analysis:
 httpsdssd
 - ensure to have the requirements specified in requirements.txt 
 - run "main.py"
+  
 The "main.py" and its related files were built by Ivan Gallo, https://github.com/ivxga/lightning_network_analysis
 
 For running the website that shows the results of the Longitudinal Graph Analysis, correlated also with Bitcoin metrics:
@@ -28,3 +29,4 @@ Running your own data collection process:
 docker run -it -v ./lnd:/lnd_data -v ./pruned_bitcoin_node/bitcoind:/bitcoind_data measurement_tool
 
 
+In case you use the collected data, please cite the repository
