@@ -381,28 +381,28 @@ def fix_zero(data, index, timeseries_key):
         data[index][timeseries_key] = data[index-1][timeseries_key]
     elif index == 0:
         data[index][timeseries_key] = data[index+1][timeseries_key]
-    else:
-        data[index][timeseries_key] = statistics.mean([data[index-1][timeseries_key], data[index+1][timeseries_key]])
+    # else:
+    #     data[index][timeseries_key] = statistics.mean([data[index-1][timeseries_key], data[index+1][timeseries_key]])
 
 
 
-def fix_hole(data, index, timeseries_key):
-    # if it's the last sample just copy the values of the previous sample
-    if index == len(data) - 1:
-        data[index][timeseries_key] = data[index-1][timeseries_key]
-    else:
-        data[index][timeseries_key] = statistics.mean([data[index-1][timeseries_key], data[index+1][timeseries_key]])
+# def fix_hole(data, index, timeseries_key):
+#     # if it's the last sample just copy the values of the previous sample
+#     if index == len(data) - 1:
+#         data[index][timeseries_key] = data[index-1][timeseries_key]
+    # else:
+    #     data[index][timeseries_key] = statistics.mean([data[index-1][timeseries_key], data[index+1][timeseries_key]])
 
 
 def fix_timeseries(data, timeseries_key):
     for index, timeseries in enumerate(data):
-        if is_hole(data, index):
-            fix_hole(data, index, timeseries_key)
-            continue
+        # if is_hole(data, index):
+        #     fix_hole(data, index, timeseries_key)
+        #     continue
         if data[index][timeseries_key] == 0:
             fix_zero(data, index, timeseries_key)
-    with open(FIXED_OPENED_AND_CLOSED_CHANNELS_OVER_TIME_PATH, 'w') as file:
-        json.dump(data, file, indent=4)
+    # with open(FIXED_OPENED_AND_CLOSED_CHANNELS_OVER_TIME_PATH, 'w') as file:
+    #     json.dump(data, file, indent=4)
     return data
 
 def integrate_with_bitcoin_value(data, path):
@@ -1215,6 +1215,7 @@ if __name__ == "__main__":
     labels=["Closed channels", "Potential closed channels"],
     title="Upperbound of the number of closed channels",
     colors=["red", "black"])
+
 
 
 

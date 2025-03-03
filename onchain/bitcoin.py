@@ -282,7 +282,8 @@ if __name__ == "__main__":
     upperbound_opened_and_channels_over_time = []
 
     no_timestamps = len(timestamp_to_block_height_mapping)
-    current_height = timestamp_to_block_height_mapping[0]["height"]
+    current_height = timestamp_to_block_height_mapping[0]["height"] 
+
     
     print("No timestamps:")
     print(no_timestamps)
@@ -328,12 +329,4 @@ if __name__ == "__main__":
             print(f"Error writing to file: {e}")
     
 
-
-    # bitcoin_block  = load_precomputed_data(BITCOIN_BLOCKS_PATH+str(868474)+".json")
-    # # print(bitcoin_block)
-    # if bitcoin_block == None:
-    #     bitcoin_block = get_transactions_from_block(868474)
-    #     create_precomputed_data(BITCOIN_BLOCKS_PATH+str(868474)+".json", bitcoin_block)
-
-    # count_p2wsh_outputs(bitcoin_block)
     
