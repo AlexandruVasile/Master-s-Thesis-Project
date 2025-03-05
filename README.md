@@ -6,7 +6,7 @@ This is the repository related to the Master's Thesis "Longitudinal Measurements
 This project aims to analyze the Bitcoin Lightning Network from multiple perspectives:
 
 For the Longitudinal Graph Analysis:
-- put in the folder "data" the downloaded snapshots from the following link: https://mega.nz/file/AmtCxZoD#-OwKZdsRjKeoZhBWo2-ADATFjFduFYVAX25KiFxjQdc
+- add in the folder "data" the downloaded snapshots from the following link: https://mega.nz/file/AmtCxZoD#-OwKZdsRjKeoZhBWo2-ADATFjFduFYVAX25KiFxjQdc
 - ensure to have the requirements specified in requirements.txt 
 - run "main.py"
   
