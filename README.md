@@ -7,7 +7,6 @@ This project aims to analyze the Bitcoin Lightning Network from multiple perspec
 
 For the Longitudinal Graph Analysis:
 - put in the folder "data" the downloaded snapshots from the following link: https://mega.nz/file/AmtCxZoD#-OwKZdsRjKeoZhBWo2-ADATFjFduFYVAX25KiFxjQdc
-httpsdssd
 - ensure to have the requirements specified in requirements.txt 
 - run "main.py"
   
